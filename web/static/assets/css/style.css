@@ -417,6 +417,17 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   transform: scale(1.2);
 }
 
+.gede{
+  font-size: 32px;
+    font-weight: 700;
+    color: #4e4039;
+    font-family: Open Sans, sans-serif;
+}
+
+.bg-madu{
+  background-image:  url('/static/madu.jpg');
+  background-position: center top;
+}
 .dis-madu {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/static/madu.jpg');
   height: 400px;
