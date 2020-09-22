@@ -105,21 +105,14 @@
       <div class="container">
 
          <ul class="list-group">
-  <li class="list-group-item"><h3>Purwokerto</h3>
-    - Jl. Jenderal Sudirman<br>
-  - Jl. Ahmad Yani<br></li>
-  <li class="list-group-item"><h3>Purwokerto</h3>
-    - Jl. Jenderal Sudirman<br>
-  - Jl. Ahmad Yani<br></li>
-  <li class="list-group-item"><h3>Purwokerto</h3>
-    - Jl. Jenderal Sudirman<br>
-  - Jl. Ahmad Yani<br></li>
-  <li class="list-group-item"><h3>Purwokerto</h3>
-    - Jl. Jenderal Sudirman<br>
-  - Jl. Ahmad Yani<br></li>
-  <li class="list-group-item"><h3>Purwokerto</h3>
-    - Jl. Jenderal Sudirman<br>
-  - Jl. Ahmad Yani<br></ul>
+
+    {% for kota in kotas %}
+    <li class="list-group-item"><h3>{{kota.nama_kota}} - <span class="label {% if kota.status == 'Tersedia' %}label-info {% else %} label-closed {% endif %}">{{kota.status}}</span></h3>
+    {% for outlet in kota.outlet_set.all %}
+    - {{outlet.alamat}}
+    <br>
+    {% endfor %}
+    {% endfor %}</ul>
       </div>
     </section>
 

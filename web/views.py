@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import *
 # Create your views here.
 
 def home(request):
@@ -22,7 +22,11 @@ def viewFranchise(request):
 
 
 def viewLokasiOutlet(request):
-    return render(request, 'lokasi_outlet.html')
+    kota = Kota.objects.all()
+    dict = {
+        'kotas':kota
+    }
+    return render(request, 'lokasi_outlet.html', dict)
 
 
 def viewTentang(request):

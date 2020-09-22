@@ -1482,3 +1482,10 @@ section {
     padding: 3px 0;
   }
 }
+
+.label{display:inline;padding:.3em;font-size:60%;font-weight:bold;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}
+a.label:hover,a.label:focus{color:#fff;text-decoration:none;cursor:pointer}
+.label-info{background-color:#5bc0de!important;}
+.label-closed {
+  background-color: #e21313;
+}
