@@ -5,7 +5,7 @@ from .models import *
 
 class ProdukImageInline(admin.StackedInline):
   model = Outlet
-  max_num=10
+  max_num=100
   extra=0
 
 class ProjectAdmin(admin.ModelAdmin):
