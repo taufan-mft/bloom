@@ -91,7 +91,8 @@
   // Navigation active state on scroll
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, .mobile-nav');
-
+  var urlnya = window.location.href;
+  if (!urlnya.includes('seblak-bloom') && !urlnya.includes('bloom-raw-honey') && !urlnya.includes('tentang-kami')){
   $(window).on('scroll', function() {
     var cur_pos = $(this).scrollTop() + 200;
 
@@ -110,7 +111,7 @@
       }
     });
   });
-
+  }
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
