@@ -92,7 +92,7 @@
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, .mobile-nav');
   var urlnya = window.location.href;
-  if (!urlnya.includes('seblak-bloom') && !urlnya.includes('bloom-raw-honey') && !urlnya.includes('tentang-kami')){
+  if (!urlnya.includes('seblak-bloom') && !urlnya.includes('bloom-raw-honey') && !urlnya.includes('tentang-kami') && !urlnya.includes('franchise')){
   $(window).on('scroll', function() {
     var cur_pos = $(this).scrollTop() + 200;
 
