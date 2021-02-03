@@ -85,7 +85,7 @@
     {% for kota in kotas %}
     <li class="list-group-item"><h3>{{kota.nama_kota}} - <span class="label {% if kota.status == 'Tersedia' %}label-info {% else %} label-closed {% endif %}">{{kota.status}}</span></h3>
     {% for outlet in kota.outlet_set.all %}
-    - {{outlet.alamat}}
+    {{forloop.counter}}. {{outlet.alamat}}
     <br>
     {% endfor %}
     {% endfor %}</ul>
